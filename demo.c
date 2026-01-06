@@ -1,25 +1,38 @@
 #include <stdio.h>
-
+#include <ctype.h>
+#include <string.h>
 int main() {
-    int spassword=2005; 
-    int ePassword;
-    int a=3; 
-    while (a>0) {
-        printf("Enter your password (%d attempts remaining): ",a);
-        scanf("%d",&ePassword);
-        if (ePassword==spassword) {
-            printf("Login successful! Welcome back.\n");
-            break;
-        } else {
-            a--;
-            if (a>0) {
-                printf("Incorrect password. Please try again.\n");
-            }
-        }
+    char password[50];
+    int i;
+    int Digit = 0, Upper = 0;
+
+    printf("Enter your password:\n ");
+    scanf("%s", password);
+
+    // Check length
+    if (strlen(password) < 8) {
+        printf("Weak Password :\n");
+        printf("Reason: Password must be at least 8 characters long.\n");
+        return 0;
     }
-    if (a==0) {
-        printf("Too many failed attempts.Your account is locked.\n");
+
+    // Check each character
+    for (i = 0; password[i] != '\0'; i++) {
+        if (isdigit(password[i]))
+            Digit = 1;
+        if (isupper(password[i]))
+            Upper = 1;
+    }
+
+    // Final check
+    if (Digit && Upper) {
+        printf("Strong Password \n");
+    } else {
+        printf("Weak Password \n");
+        printf("Reason: Password must contain at least one digit and one uppercase letter.\n");
     }
 
     return 0;
 }
+i want to add the output of this code in my readme file but in screenshot form
+
