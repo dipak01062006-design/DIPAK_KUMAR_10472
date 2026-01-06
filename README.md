@@ -1,11 +1,18 @@
 # 🔐 Basic Password Strength Checker (C Project)
 
+## 📌 Project Details
+- Project Title: Basic Password Checker
+- Project Type: Mini Project
+- Programming language :C
+- Semester : First
+- Purpose: To validate password strength using basic programming logic
+  This project checks whether a user-entered password meets minimum security requirements and provides feedback accordingly.
+
 ## 📌 Aim
 The goal of this project is to **create a Basic Password Strength Checker** that validates a user’s password by ensuring:
 - ✅ Minimum length requirement  
 - ✅ Presence of at least one digit  
 - ✅ Presence of at least one uppercase letter  
-
 
 ## 🛠️ Features
 - Written in **C language**  
@@ -38,27 +45,20 @@ The goal of this project is to **create a Basic Password Strength Checker** that
 - Based on the checks, the program displays whether the password is Strong or Weak, along with the reason if it is weak.
 
 
-## 📖 Steps Implemented
-1. Ask the user to enter a password string.  
-2. Read the password using `scanf` or `gets`.  
-3. Create a function to validate the password.  
-4. Pass the entered password to the validation function.  
-5. Inside the function, check if the password meets the minimum length requirement.  
-6. Use a loop to check if the password contains at least one digit.  
-7. Use a loop to check if the password contains at least one uppercase letter.  
-8. If all conditions are met, return success from the function.  
-9. If any condition fails, return failure or an error message.  
-10. In `main()`, display whether the password is valid or not based on the function result.  
+## ♨️Utilities of the Project
+- Helps users create strong and secure passwords.
+- Prevents the use of weak passwords by validating basic security rules.
+- Improves understanding of password security concepts.
+- Can be used as a basic module in login and registration systems.
+    
+## 🎗️Future Scope of the Project
+1.Special characters (such as @, #, $) can be added as an additional password requirement.
+2.The program can be enhanced to hide the password input instead of displaying it on the screen.
+3.Password strength levels such as Weak, Medium, and Strong can be implemented.
+4.The program can be modified to provide real-time feedback while typing the password.
+5.The password checker can be integrated into a login or registration system.
+
+## Output(screenshot).
+<img width="826" height="217" alt="dipak output" src="https://github.com/user-attachments/assets/3af02ab0-0267-4f57-a66f-7250b2f97e85" />
 
 
-## Output:
-- Enter your password:
-- StrongPass1
-- Strong Password
-
-
-## Output with user input:
-- Enter your password:
-- dipak123
-- Weak Password
-- Reason: Password must contain at least one digit and one uppercase letter.
