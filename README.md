@@ -52,13 +52,13 @@ The goal of this project is to **create a Basic Password Strength Checker** that
 
 
 ## Output:
-Enter your password:
-StrongPass1
-Strong Password
+- Enter your password:
+- StrongPass1
+- Strong Password
 
 
 ## Output with user input:
-Enter your password:
-dipak123
-Weak Password
-Reason: Password must contain at least one digit and one uppercase letter.
+- Enter your password:
+- dipak123
+- Weak Password
+- Reason: Password must contain at least one digit and one uppercase letter.
